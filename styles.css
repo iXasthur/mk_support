@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Baloo;
+    background: linear-gradient(to left, #8942a8, #ba382f);
+    color: white;
+}
+
+/*---------------INDEX+HEADER+FOOTER---------------*/
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    .universal-header{
+        justify-content: center;
+    }
+
+}
+@media screen and (min-width: 600px) {
+
+    body {
+        font-size: 30px;
+    }
+
+    .universal-header {
+        justify-content: start;
+        padding-left: 25px;
+    }
+
+}
+
+.universal-header{
+    display: grid;
+    grid-auto-flow: row;
+    text-align: center;
+    background: #1b1b1b;
+}
+.universal-header h1 a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.07s;
+}
+.universal-header h1 a:hover{
+    color: gold;
+}
+
+.universal-footer{
+    text-align: right;
+    margin-top: 40px;
+    padding-right: 25px;
+    background: linear-gradient(to right, #1b1b1b00, #1b1b1b);
+    font-size: 20px;
+}
+
+
+.i-main{
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+}
+
+.i-main div{
+    padding-top: 40px;
+}
+
+.i-main div p a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.07s;
+}
+.i-main div p a:hover{
+    color: gold;
+}
+
+
