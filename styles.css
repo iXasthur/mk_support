@@ -77,4 +77,36 @@ body {
     color: gold;
 }
 
+/*---------------DOWNLOAD---------------*/
+.download-main {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.download-main div{
+    padding-top: 40px;
+}
+
+.store-badge-google {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .store-badge-google img {
+        width: 170px;
+    }
+
+}
+@media screen and (min-width: 600px) {
+
+    .store-badge-google img {
+        width: 220px;
+    }
+
+}
 
