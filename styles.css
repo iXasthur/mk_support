@@ -4,8 +4,10 @@
 }
 
 body {
-    font-family: Baloo;
-    background: linear-gradient(to left, #8942a8, #ba382f);
+    font-family: 'Dongle', sans-serif;
+    background: #a770ef; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #a770ef, #cf8bf3, #fdb99b); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #a770ef, #cf8bf3, #fdb99b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
 }
 
@@ -13,7 +15,7 @@ body {
 @media screen and (max-width: 600px) {
 
     body {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .universal-header{
@@ -24,7 +26,7 @@ body {
 @media screen and (min-width: 600px) {
 
     body {
-        font-size: 30px;
+        font-size: 33px;
     }
 
     .universal-header {
@@ -32,6 +34,12 @@ body {
         padding-left: 25px;
     }
 
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .universal-header{
@@ -51,7 +59,7 @@ body {
 
 .universal-footer{
     text-align: right;
-    margin-top: 60px;
+    margin-top: auto;
     padding-right: 25px;
     background: linear-gradient(to right, #1b1b1b00, #1b1b1b);
     font-size: 20px;
@@ -60,6 +68,7 @@ body {
 
 .i-main{
     display: grid;
+    margin-bottom: 80px;
     grid-auto-flow: row;
     justify-content: center;
 }
