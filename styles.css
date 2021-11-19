@@ -102,6 +102,14 @@ body{
     display: grid;
     justify-content: center;
     margin-top: 20px;
+    border-radius: 13px;
+}
+
+.store-badge-apple {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 13px;
 }
 
 @media screen and (max-width: 600px) {
@@ -110,11 +118,19 @@ body{
         width: 170px;
     }
 
+    .store-badge-apple img {
+        width: 149px;
+    }
+
 }
 @media screen and (min-width: 600px) {
 
     .store-badge-google img {
         width: 220px;
+    }
+
+    .store-badge-apple img {
+        width: 193px;
     }
 
 }
