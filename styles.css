@@ -13,51 +13,40 @@ body {
 
 /*---------------INDEX+HEADER+FOOTER---------------*/
 @media screen and (max-width: 600px) {
-
-    body {
-        font-size: 22px;
-    }
-
     .universal-header{
         justify-content: center;
     }
-
 }
 @media screen and (min-width: 600px) {
-
-    body {
-        font-size: 33px;
-    }
-
     .universal-header {
         justify-content: start;
         padding-left: 25px;
     }
-
 }
 
-body{
+body {
+    font-size: 34px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.universal-header{
+.universal-header {
     display: grid;
     grid-auto-flow: row;
     text-align: center;
     background: #1b1b1b;
 }
-.universal-header h1 a{
+.universal-header h2 a {
     color: white;
     text-decoration: none;
     transition-duration: 0.07s;
 }
-.universal-header h1 a:hover{
+.universal-header h2 a:hover {
     color: gold;
 }
 
-.universal-footer{
+.universal-footer {
     text-align: right;
     margin-top: auto;
     padding-right: 25px;
@@ -65,24 +54,21 @@ body{
     font-size: 20px;
 }
 
-
-.i-main{
+.i-main {
     display: grid;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     grid-auto-flow: row;
     justify-content: center;
 }
-
-.i-main div{
-    padding-top: 40px;
+.i-main div {
+    padding-top: 20px;
 }
-
-.i-main div p a{
+.i-main div p a {
     color: white;
     text-decoration: none;
     transition-duration: 0.07s;
 }
-.i-main div p a:hover{
+.i-main div p a:hover {
     color: gold;
 }
 
@@ -93,8 +79,7 @@ body{
     justify-content: center;
     text-align: center;
 }
-
-.download-main div{
+.download-main div {
     padding-top: 40px;
 }
 
@@ -113,25 +98,18 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-
     .store-badge-google img {
         width: 170px;
     }
-
     .store-badge-apple img {
         width: 149px;
     }
-
 }
 @media screen and (min-width: 600px) {
-
     .store-badge-google img {
         width: 220px;
     }
-
     .store-badge-apple img {
         width: 193px;
     }
-
 }
-
